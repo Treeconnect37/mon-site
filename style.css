@@ -79,12 +79,6 @@ html{
   margin: 0 auto;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #333;
-}
-
 /* ========== BURGER (caché sur ordi) ========== */
 .burger {
   display: none;
