@@ -90,7 +90,7 @@ html{
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1em;
+  gap: 10.3em;
 }
 
 .nav-links li a {
