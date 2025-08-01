@@ -57,3 +57,7 @@ button { background: #007BFF; color: white; cursor: pointer; }
   font-weight: bold;
   transition: 0.3s ease;
 }
+
+html{
+  scroll-behavior:smooth;
+}
