@@ -61,3 +61,73 @@ button { background: #007BFF; color: white; cursor: pointer; }
 html{
   scroll-behavior:smooth;
 }
+/* ========== NAVBAR GÉNÉRALE ========== */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* ========== BURGER (caché sur ordi) ========== */
+.burger {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+/* ========== LIENS DE NAVIGATION ========== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* ========== RESPONSIVE MOBILE ========== */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    background-color: white;
+    padding: 1em;
+    position: absolute;
+    top: 60px;
+    right: 1em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
